@@ -1,46 +1,12 @@
-# EduGaza
+# React + Vite
 
-## Context
-If Allah wills, this project will be used to provide story-based learning platform for 4-10 years of kids of Palestine.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-The education system in Palestine as completely come to a halt. May Allah bring this war to a complete halt, and make it easir for the people of palestine.
+Currently, two official plugins are available:
 
-With Allah's help, this app can potentially help partents to engage their kids in learning by reading and listing to knowledge packed stories. The stories will be associated with quizzes and in-app games to engage student in a learning journey.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-People from Palestine are facing very limited access to internet and electricity. Hence, our target will be to use concepts like PWA, SWs, potimized caching, peer-to-peer data sharing through bluetooth, etc. So that the app can work with minimal internet and power usage.
+## Expanding the ESLint configuration
 
-
-## Project Setup
-
-### Pre-Requisite
-Install the following softwares for the setup.
-- Git
-- Docker
-
-### Add configuration files
-
-1- Add `.env` file to folder `eduqaza-ui` with following content
-```
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-NEXT_PUBLIC_API_URL=http://localhost:8080
-NEXT_PUBLIC_APP_NAME=Edu Gaza
-```
-
-2- Add `application.properties` in folder `services/user-svc/src/main/resources` with following content
-```
-spring.data.mongodb.uri=mongodb://mongo:27017/otp-auth
-spring.mail.host=smpt.mailserver.com
-spring.mail.port=123
-spring.mail.username=yourmeail@doamin.com
-spring.mail.password=yourpassword
-spring.mail.properties.mail.smtp.auth=true
-spring.mail.properties.mail.smtp.starttls.enable=true
-spring.mail.properties.mail.smtp.from=jawad@questra.digital
-```
-
-### Step to run the project
-Use the following steps to start the project locally
-
-- `git clone https://github.com/jawadkc/EduGaza.git`
-- `cd EduGaza`
-- `docker compose up --build -d`
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
