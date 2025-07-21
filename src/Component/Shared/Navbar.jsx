@@ -11,7 +11,7 @@ const Navbar = () => {
         <li><NavLink to="/" className={`font-bold text-sky-400 bg-white text-lg ml-3 ${({ isActive }) => isActive ? "greenbg text-white" : ""}`}>  <IoLocation></IoLocation> Contact</NavLink></li>
     </>
     return (
-        <div className="navbar w-full fixed p-2 shadow-sm">
+        <div className="navbar bg-white w-full fixed shadow-sm z-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <a className="btn btn-ghost text-xl">
-                    <div className="flex items-center justify-between bg-[#FFFF00] p-2 rounded-xl">
+                    <div className="flex items-center justify-between p-2 rounded-xl">
                         
                         <div className="">
                             <span className="greentext text-3xl font-bold">E</span>
